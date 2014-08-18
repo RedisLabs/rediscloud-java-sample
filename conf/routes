@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                           controllers.Assets.at(path="/public/html", file="index.html")
+GET     /command                    controllers.Application.command(a:String)
+
+GET     /images/*file        controllers.Assets.at(path="/public/images", file)
